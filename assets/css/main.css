@@ -102,7 +102,7 @@ h6 {
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #teal;
+  background: transparent;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -366,11 +366,11 @@ h6 {
   }
   
 50% {
-    transform: skewZ(20deg);
+    transform: skewY(0deg);
   }
 
   100% {
-    transform: skewX(20deg);
+    transform: skewY(-20deg);
   }
 }
 
@@ -536,9 +536,18 @@ section,
   z-index: 1;
 }
 
+@media(max-width: 700px){
+  .hero img {
+    object-fit: contain;
+object-position: top;
+
+}
+}
+
+
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: transparent;
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -665,11 +674,18 @@ section,
 # Skills Section
 --------------------------------------------------------------*/
 .skills .progress {
-  height: auto;
+  height: 150px;
   display: block;
   background: none;
   border-radius: 0;
   margin-bottom: 50px;
+  width: 70%;
+}
+
+@media(max-width:992px){
+  .skills .progress {
+  width: 100%;
+}
 }
 
 .skills .progress .skill {
@@ -1150,7 +1166,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+#my-form-button {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1159,7 +1175,7 @@ section,
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+#my-form-button:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
