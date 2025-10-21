@@ -557,9 +557,6 @@ object-position: center;
 .hero .container {
   position: relative;
   z-index: 3;
-  background: #ffffffb1;
-  padding: 50px;
-  border-radius: 20px;
 }
 
 .hero h2 {
@@ -951,7 +948,7 @@ object-position: center;
 }
 
 .services .service-item.item-cyan i {
-  color: tomato;
+  color: #ff6347;
 }
 
 .services .service-item.item-cyan:hover .icon i {
