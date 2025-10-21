@@ -534,12 +534,13 @@ section,
   height: 100%;
   object-fit: contain;
   z-index: 1;
+  
 }
 
 @media(max-width: 700px){
   .hero img {
     object-fit: contain;
-object-position: top;
+object-position: center;
 
 }
 }
@@ -556,6 +557,9 @@ object-position: top;
 .hero .container {
   position: relative;
   z-index: 3;
+  background: #ffffffb1;
+  padding: 50px;
+  border-radius: 20px;
 }
 
 .hero h2 {
